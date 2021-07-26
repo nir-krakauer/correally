@@ -236,9 +236,9 @@ correallyPlot = function(data,
 
   #transform data
   plotdata <- reshape2::melt(data)
-  plotdata$size <- (abs(plotdata$value)) + 0.1
+  plotdata$size <- (abs(plotdata$value))
   plotdata <- plotdata[!is.na(plotdata$value),]
-  plotdata$size[plotdata$size < 0.3] <- 0.3
+  plotdata$size[plotdata$size < 0.05] <- 0.05
   plotdata$size <- plotdata$size * scaling
 
   #define plot
