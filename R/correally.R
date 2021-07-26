@@ -106,7 +106,7 @@ validateViridis <- function(string){
 #'
 #'
 #'
-#' @param data A matrix or data frame containing a correlation matrix. Must be numeric and symmetric.
+#' @param data A matrix or data frame containing a correlation matrix. Must be numeric.
 #' @param mask A logical scalar. If \emph{TRUE}, removes the everything above and including the diagonal. Defaults to \emph{FALSE}.
 #' @param color Either a vector of Base R colors (e.g. "red", "blue"), a vector of colors in hexadecimal #RRGGBB# format,
 #' a colorbrewer2.org palette name (e.g. "YlOrRd", "BrBG") or a viridis palette name (e.g. "viridis", "magma", "inferno").
@@ -147,11 +147,6 @@ correallyPlot = function(data,
     }else{
       stop("Invalid data input")
     }
-  }
-
-  #check if data is symmetric
-  if(!isSymmetric(data)){
-    stop("Data input is not symmetric")
   }
 
   #masking
