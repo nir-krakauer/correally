@@ -28,6 +28,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+NK: forked to make tweaks for personal use.
+
 correally is an R package providing methods to create interactive visualizations of correlation matrices. It is built as a wrapper around plotly.
 
 It provides a clean implementation for plotting correlation matrices, easy use of different color schemes
